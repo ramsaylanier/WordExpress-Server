@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "apollo-server-express": "^1.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
+    "config": "^1.28.1",
+    "express": "^4.16.2",
+    "graphql": "^0.11.7",
+    "graphql-tools": "^2.12.0",
+    "wordexpress-schema": "file:../WordExpressSchema/"
+  },
+  "scripts": {
+    "start": "babel-node ./server.js",
+    "startmon": "nodemon --exec npm run start"
+  }
+}
