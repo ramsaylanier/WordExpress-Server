@@ -1,0 +1,15 @@
+{
+  "public": {
+    "uploads": "http://wordexpress.s3.amazonaws.com/",
+    "amazonS3": true
+  },
+  "private": {
+    "wp_prefix": "wp_",
+    "database": {
+      "name": "wpexpress_dev",
+      "username": "root",
+      "password": "",
+      "host": "127.0.0.1"
+    }
+  }
+}
