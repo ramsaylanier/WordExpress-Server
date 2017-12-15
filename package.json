@@ -12,6 +12,7 @@
   },
   "scripts": {
     "start": "babel-node ./src/server.js",
+    "build": "NODE_ENV=production babel src -d dist",
     "startmon": "nodemon --exec npm run start --watch ./src --watch node_modules/wordexpress-schema/lib/index.js"
   }
 }
