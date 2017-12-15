@@ -13,6 +13,8 @@ const DocumentationResolver = {
         where: {
           post_type: 'documentation'
         }
+      }).then(r => {
+        return r
       })
     }
   }
