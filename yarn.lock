@@ -2146,9 +2146,9 @@ wkx@^0.4.1:
   dependencies:
     "@types/node" "*"
 
-wordexpress-schema@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/wordexpress-schema/-/wordexpress-schema-3.0.0.tgz#589e2fb8dad0ef312d8936ef030073ec462b3a8c"
+wordexpress-schema@latest:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/wordexpress-schema/-/wordexpress-schema-3.0.2.tgz#453c1ea37f90b8754128c17a346350d13e31a229"
   dependencies:
     lodash "^4.13.1"
     mysql2 "^1.5.1"
