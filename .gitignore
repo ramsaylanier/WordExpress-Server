@@ -3,3 +3,4 @@ dist/
 config/development.json
 config/production.json
 wordexpress.pem
+npm-debug.log

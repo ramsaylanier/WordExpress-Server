@@ -1,7 +1,7 @@
 {
   "public": {
-    "uploads": "http://wordexpress.s3.amazonaws.com/",
-    "amazonS3": true
+    "uploads": "http://wordexpress.dev/wp-content/uploads/",
+    "amazonS3": false
   },
   "private": {
     "wp_prefix": "wp_",

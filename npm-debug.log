@@ -27,7 +27,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid @
 16 verbose cwd /Users/rlanier/Projects/wordexpress-server
-17 error Darwin 17.2.0
+17 error Darwin 17.3.0
 18 error argv "/Users/rlanier/.nvm/versions/node/v6.5.0/bin/node" "/Users/rlanier/.nvm/versions/node/v6.5.0/bin/npm" "run" "start"
 19 error node v6.5.0
 20 error npm  v4.0.2
