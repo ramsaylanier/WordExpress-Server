@@ -9,12 +9,13 @@
     "express": "^4.16.2",
     "graphql": "^0.11.7",
     "graphql-tools": "^2.12.0",
-    "wordexpress-schema": "^3.1.0"
+    "nodemon": "^1.14.9",
+    "wordexpress-schema": "^4.2.0"
   },
   "scripts": {
     "start": "babel-node ./src/server.js",
     "startprod": "NODE_ENV=production node dist/server.js",
     "build": "babel src -d dist",
-    "startmon": "nodemon --exec npm run start --watch ./src --watch node_modules/wordexpress-schema/lib/index.js"
+    "startmon": "nodemon --exec npm run start --watch ./src --watch node_modules/wordexpress-schema/lib/index.js --watch ./config"
   }
 }
