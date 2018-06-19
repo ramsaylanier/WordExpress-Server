@@ -7,6 +7,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "graphql": "^0.13.2",
+    "lodash.merge": "^4.6.1",
     "nodemon": "^1.14.9",
     "wordexpress-schema": "^4.2.0"
   },
