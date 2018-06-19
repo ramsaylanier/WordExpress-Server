@@ -1,30 +1,28 @@
 import express from 'express'
-import {graphqlExpress, graphiqlExpress} from 'apollo-server-express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
-import graphqlSchema from './schema'
+import {ApolloServer} from 'apollo-server'
+import {WordExpressDefinitions, WordExpressResolvers} from 'wordexpress-schema'
+import {connectors} from './db'
+import {DocumentationQuery, DocumentationResolver} from './extensions/documentation'
+import {PostQuery, PostResolver} from './extensions/post'
+import {merge} from 'lodash'
+import Config from 'config'
 
 const PORT = 4000
 const app = express()
 
-app.use(cors())
-app.use(
-  '/graphql',
-  bodyParser.json(),
-  graphqlExpress(req => {
-    return({
-      schema: graphqlSchema
-    })
-  })
-)
- 
-app.use(
-  '/graphiql',
-  graphiqlExpress({
-    endpointURL: '/graphql',
-  })
-)
+const RootResolvers = WordExpressResolvers(connectors, Config.get('public'))
+const Resolvers = merge(RootResolvers, DocumentationResolver, PostResolver)
 
-app.listen(PORT, () => {
+const server = new ApolloServer({
+  typeDefs: [...WordExpressDefinitions, DocumentationQuery, PostQuery],
+  resolvers: Resolvers
+})
+
+server.applyMiddleware({app})
+
+app.use(cors())
+app.listen({port: PORT}, () => {
   console.log(`wordexpress server is now running on port ${PORT}`)
 })
