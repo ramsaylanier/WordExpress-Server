@@ -1,11 +1,9 @@
 {
   "dependencies": {
-    "apollo-server": "^2.0.0-rc.0",
+    "apollo-server": "^2.0.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "config": "^1.28.1",
-    "cors": "^2.8.4",
-    "express": "^4.16.2",
     "graphql": "^0.13.2",
     "lodash.merge": "^4.6.1",
     "nodemon": "^1.14.9",
