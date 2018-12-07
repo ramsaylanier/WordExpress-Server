@@ -1,5 +1,5 @@
 # WordExpress-Server
->An express GraphQL server that connects to a WordPress database
+>A GraphQL server that connects to a WordPress database
 
 WordExpress-Server is an GraphQL server that uses [WordExpressSchema](https://github.com/ramsaylanier/WordExpressSchema) to provide you with a GraphQL endpoint that your client application can use to query a WordPress database. All you need to do is provide connection details to your WordPress database (see below). Refer to the [WordExpress documentation](http://wordexpress.io/documentation#introduction) for more information.
 
